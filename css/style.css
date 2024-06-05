@@ -1,134 +1,112 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Helvetica;
 }
 
-#hcont {
+#hcont{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-header {
+header{
     background-color: #BB436D;
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     border-bottom: 5px solid #C968B2;
 }
 
-h1 {
+h1{
     color: #fff;
     text-shadow: 1px 1px #000;
-    padding-top: 5px;
-    padding-left: 250px;
-    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 24px;
 }
+/* titulo */
 
-.car {
+.car, #log, #clog {
     display: block;
-    width: 10%;
+    width: 80%;
     color: white;
     text-align: justify;
     text-decoration: none;
     background-color: none;
-    margin-left: 487px;
+    margin: 10px auto;
+    font-size: 18px;
 }
+/* praia do rosa, aproveite nossos videos, seja bem vindo */
 
-#log {
-    display: block;
-    width: 25%;
-    color: #fff;
-    padding: 0px;
-    border: none;
-    font-size: 20px;
-    background-color: transparent;
-    margin-left: 40px;
-    margin-top: 0px;
-}
-
-#clog {
-    display: block;
-    width: 20%;
-    color: #fff;
-    padding: 0px;
-    border: none;
-    font-size: 20px;
-    background-color: transparent;
-    margin-left: 10px;
-    margin-top: 0px;
-}
-
-.container {
+.container{
     background-color: #ffcbdb;
     min-height: 60vh;
-    padding: 60px;
+    padding: 20px;
 }
+/* tamanho da pagina */
 
-.produtos-container {
-    max-width: 1200px;
+.produtos-container{
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.product-image {
-    height: 300px;
+.product-image{
+    height: 200px;
     width: 100%;
     margin-bottom: 10px;
     background-position: center;
     background-size: cover;
-    border: 5px solid #EFCD87;
+    border: 5px solid 	#EFCD87;
     border-radius: 20px;
 }
+/* espaçamento da foto com o titulo da foto */
 
-.card {
-    width: 31%;
-    display: inline-block;
-    margin: 1% 1%;
-    padding: 15px;
+.card{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
 }
+/* tamanho das fotos */
 
-#img-1 {
+#img-1{
     background-image: url('../imagens/img1.jpg');
 }
-
-#img-2 {
+#img-2{
     background-image: url('../imagens/img2.jpg');
 }
-
-#img-3 {
+#img-3{
     background-image: url('../imagens/img3.jpg');
 }
-
-#img-4 {
+#img-4{
     background-image: url('../imagens/img4.jpg');
 }
-
-#img-5 {
+#img-5{
     background-image: url('../imagens/img5.jpeg');
 }
-
-#img-6 {
+#img-6{
     background-image: url('../imagens/img6.jpeg');
 }
 
-h3 {
-    margin-bottom: 20px;
+h3{
+    margin-bottom: 10px;
     color: #000;
     border-left: 5px solid #E7B03E;
     padding-left: 7px;
-    font-size: 24px;
+    font-size: 20px;
 }
+/* titulo das fotos */
 
-.card p {
+.card p{
     margin-bottom: 10px;
 }
 
-.bold {
+.bold{
     font-weight: bold;
 }
 
-.btn {
+.btn{
     display: block;
     width: 100%;
     text-align: center;
@@ -136,57 +114,56 @@ h3 {
     text-decoration: none;
     background-color: #603F91;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     transition: 0.5s;
 }
+/* botao */
 
-.btn:hover {
+.btn:hover{
     background-color: #EFCD87;
 }
+/* transiçao botao */
 
-#rodape {
+#rodape{
     background-color: #4D26B4;
     color: #fff;
     border-top: 3px solid #603F91;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
+/* rodape */
 
-/* Mobile styles */
-@media (max-width: 768px) {
+/* Media Query para telas maiores */
+@media (min-width: 768px) {
     #hcont {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     h1 {
-        padding-left: 0;
-        font-size: 30px;
+        font-size: 40px;
+        padding-left: 250px;
     }
 
-    .car {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    #log,
-    #clog {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-        margin-top: 10px;
+    .car, #log, #clog {
+        width: auto;
+        margin-left: 40px;
     }
 
     .container {
-        padding: 30px;
+        padding: 60px;
     }
 
     .card {
-        width: 100%;
-        margin: 10px 0;
+        width: 31%;
+        display: inline-block;
+        margin: 1% 1%;
     }
 
     .product-image {
-        height: 200px;
+        height: 300px;
     }
 }
+
+    
+   
