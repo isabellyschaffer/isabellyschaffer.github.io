@@ -30,11 +30,10 @@ h1{
 .car, #log, #clog {
     display: block;
     width: 80%;
-    
+    color: white;
     text-align: justify;
     text-decoration: none;
     background-color: none;
-    margin: 10px auto;
     font-size: 18px;
 }
 /* praia do rosa, aproveite nossos videos, seja bem vindo */
